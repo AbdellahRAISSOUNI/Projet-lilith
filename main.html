@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Irregular Verbs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="header-title">English Irregular Verbs</div>
+            <div class="header-nav">
+                <button id="prevPane" class="nav-arrow">&lt;</button>
+                <button id="nextPane" class="nav-arrow">&gt;</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-pane">
+                <h1>English: Irregular verbs</h1>
+                <table id="verbsTable">
+                    <thead>
+                        <tr>
+                            <th>Base form</th>
+                            <th>Past tense</th>
+                            <th>Past participle</th>
+                            <th>Translation</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right-pane">
+                <div class="controls">
+                    <div class="add-verb">
+                        <label for="verb">Add a verb:</label>
+                        <input type="text" id="verb">
+                        <button id="addVerb">Add</button>
+                    </div>
+                    <div class="search-verb">
+                        <label for="search">Verb to find:</label>
+                        <input type="text" id="search">
+                        <button id="findVerb">Find</button>
+                    </div>
+                </div>
+                <div id="statistics">
+                    <h2>Statistics</h2>
+                    <p></p>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <a href="#" data-letter="a">Verbs starting with A</a>
+                    <a href="#" data-letter="b">Verbs starting with B</a>
+                    <a href="#" data-letter="c">Verbs starting with C</a>
+                    <a href="#" data-letter="d">Verbs starting with D</a>
+                    <a href="#" data-letter="e">Verbs starting with E</a>
+                    <a href="#" data-letter="f">Verbs starting with F</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
